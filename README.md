@@ -274,6 +274,4 @@ npm run client
 ## License
 
 MIT — For educational and demonstration purposes.
-#   D D o S - P r o t e c t i o n - S y s t e m 
- 
- 
+#
