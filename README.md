@@ -21,95 +21,6 @@ A full-stack cybersecurity web application demonstrating cloud DDoS detection, a
 - Notification center with real-time alerts
 - Geolocation attack map
 
-## Prerequisites
-
-- Node.js 18+
-- MongoDB running locally (or update `MONGODB_URI` in `server/.env`)
-
-## Installation
-
-### 1. Clone the repository
-```bash
-git clone <repository-url>
-cd DDoS
-```
-
-### 2. Install dependencies
-```bash
-# Install root dependencies
-npm install
-
-# Install server dependencies
-cd server
-npm install
-
-# Install client dependencies
-cd ../client
-npm install
-```
-
-Or use the convenience script:
-```bash
-npm run install:all
-```
-
-### 3. Configure environment variables
-
-**Server (`server/.env`):**
-```bash
-PORT=5000
-MONGODB_URI=mongodb://127.0.0.1:27017/ddos_protection
-JWT_SECRET=your_super_secret_jwt_key_change_in_production
-JWT_EXPIRES_IN=7d
-CLIENT_URL=http://localhost:5173
-```
-
-**Client (`client/.env`):**
-```bash
-VITE_API_URL=http://localhost:5000
-VITE_SOCKET_URL=http://localhost:5000
-```
-
-### 4. Start MongoDB
-Make sure MongoDB is running on your system:
-```bash
-# On Windows (if using MongoDB as a service)
-net start MongoDB
-
-# Or if using MongoDB Community Edition
-mongod
-```
-
-### 5. Seed the database (optional)
-```bash
-cd server
-npm run seed
-```
-
-This creates demo users and sample traffic data.
-
-## Running the Application
-
-### Development Mode (both servers)
-```bash
-npm run dev
-```
-
-This starts both the backend server (port 5000) and frontend dev server (port 5173) concurrently.
-
-### Individual Servers
-```bash
-# Backend only
-npm run server
-
-# Frontend only
-npm run client
-```
-
-### Access URLs
-- **Frontend:** http://localhost:5173
-- **Backend API:** http://localhost:5000
-- **API Health Check:** http://localhost:5000/api/health
 
 ## Demo Credentials
 
@@ -274,4 +185,7 @@ npm run client
 ## License
 
 MIT — For educational and demonstration purposes.
-#
+## Author
+
+kumaran
+
